@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Checkout - Reserva de Viagem</title>
+    <link rel="stylesheet" href="css/reserva.css">
+</head>
+
+<body>
+    <div class="header-1">
+        <div class="logo">
+            <a href="index.html"><img src="img/logo.png" class="logo" alt="logomarca"/></a>
+        </div>
+        <div class="header-2">
+            <div class="menu">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="usuario.html">Cadastro</a></li>
+                    <li><a href="reserva.html">Reserva</a></li>
+                    <li><a href="cadastroimovel.html">Anuncie aqui</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="redes-sociais">
+            <ul>
+                <li><a href="https://www.instagram.com/"><img src="img/rede1.png" alt="Instagram" /></a></li>
+                <li><a href="https://x.com/home"><img src="img/rede2.png" alt="Twitter" /></a></li>
+            </ul>
+        </div>
+
+    </div>
+
+    <div class="container">
+        <h1>Checkout - Reserva de Viagem</h1>
+
+        <div class="card">
+            <div class="gallery">
+                <img src="img/01.webp" alt="Foto da Casa 1">
+                <img src="img/02.jpeg" alt="Foto da Casa 2">
+                <img src="img/03.jpeg" alt="Foto da Casa 3">
+                <img src="img/04.jpg" alt="Foto da Casa 4">
+                <img src="img/05 (2).jpg" alt="Foto da Casa 5">
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="resumo-container">
+                <div class="resumo">
+                    <h2>Resumo da Viagem</h2>
+                    <p><strong>Destino:</strong> Paris, França</p>
+                    <p><strong>Data de Partida:</strong> 10/09/2024</p>
+                    <p><strong>Data de Retorno:</strong> 20/09/2024</p>
+                    <p><strong>Passageiros:</strong> 2 Adultos, 1 Criança</p>
+                </div>
+
+                <div class="resumo">
+                    <h2>Resumo do Imóvel</h2>
+                    <p><strong>Localização:</strong> Bairro Montmartre, Paris</p>
+                    <p><strong>Tipo:</strong> Apartamento</p>
+                    <p><strong>Quartos:</strong> 2</p>
+                    <p><strong>Preço por Noite:</strong> R$1.720</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="checkout-container">
+            <h1>Resumo da Reserva</h1>
+            <div class="checkout-details">
+                <div class="checkout-info">
+                    <h2>Detalhes da Reserva</h2>
+                    <p><strong>Valor por Noite:</strong> R$ 200,00</p>
+                    <p><strong>Check-in:</strong> 01/09/2024</p>
+                    <p><strong>Check-out:</strong> 07/09/2024</p>
+                    <p><strong>Número de Noites:</strong> 6</p>
+                    <p><strong>Valor Total:</strong> R$ 1.200,00</p>
+                </div>
+
+
+                <div class="payment-info">
+                    <h2>Forma de Pagamento</h2>
+                    <form id="paymentForm">
+                        <div class="payment-options">
+                            <label>
+                                <input type="radio" name="payment-method" value="credit-card" checked>
+                                Cartão de Crédito
+                            </label>
+                            <label>
+                                <input type="radio" name="payment-method" value="bank-transfer">
+                                Transferência Bancária
+                            </label>
+                            <label>
+                                <input type="radio" name="payment-method" value="paypal">
+                                Pix
+                            </label>
+                        </div>
+                        <button type="submit">Finalizar Compra</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+        <footer class="site-footer">
+            <div class="footer-container">
+                <ul class="footer-links">
+                    <li><a href="#">Sobre Nós</a></li>
+                    <li><a href="#">Termos e Condições</a></li>
+                    <li><a href="#">Cancelamento</a></li>
+                    <li><a href="#">Política de Privacidade</a></li>
+                </ul>
+                <div class="security-certificate">
+                    <span class="certificate-text">Certificado de Segurança</span>
+                </div>
+            </div>
+        </footer>
+
+        <script src="js/reserva.js"></script>
+</body>
+
+</html>

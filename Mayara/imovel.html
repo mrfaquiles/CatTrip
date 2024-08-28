@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Apartamento em Paris</title>
+    <link rel="stylesheet" href="css/imovel.css">
+</head>
+
+<body>
+    <div class="header-1">
+        <div class="logo">
+            <a href="index.html"><img src="img/logo.png" class="logo" alt="logomarca"/></a>
+        </div>
+        <div class="header-2">
+            <div class="menu">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="usuario.html">Cadastro</a></li>
+                    <li><a href="reserva.html">Reserva</a></li>
+                    <li><a href="cadastroimovel.html">Anuncie aqui</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="redes-sociais">
+            <ul>
+                <li><a href="https://www.instagram.com/"><img src="img/rede1.png" alt="Instagram" /></a></li>
+                <li><a href="https://x.com/home"><img src="img/rede2.png" alt="Twitter" /></a></li>
+            </ul>
+        </div>
+    </div>
+
+    <main>
+        <section class="property-title">
+            <h1>Bela Casa de Praia</h1>
+        </section>
+
+        <section class="property-gallery">
+            <h2>Galeria de Fotos</h2>
+            <div class="slider">
+                <div class="slides">
+                    <img src="img/casa 1/01.jpg" alt="Imagem 1">
+                    <img src="img/casa 1/02.jpg" alt="Imagem 2">
+                    <img src="img/casa 1/03.jpg" alt="Imagem 3">
+                    <img src="img/casa 1/04.jpg" alt="Imagem 4">
+                    <img src="img/casa 1/05.jpg" alt="Imagem 5">
+                </div>
+                <button class="prev" onclick="changeSlide(-1)">&#10094;</button>
+                <button class="next" onclick="changeSlide(1)">&#10095;</button>
+                <section class="card-container">
+                    <div class="card">
+                        <h3>Reserva de Imóvel</h3>
+                        <p class="price">R$ 250,00 por noite</p>
+                        <a href="reserva.html"><button class="reserve-button">Reservar Agora</button></a>
+                    </div>
+                </section>
+            </div>
+        </section>
+
+        <section class="property-description">
+            <h2>Descrição</h2>
+            <hr><br>
+            <p>Esta bela casa de praia oferece todo o conforto que você precisa para uma estadia relaxante. Localizada em um bairro tranquilo, com vista para o mar, a casa é ideal para famílias e grupos de amigos.</p>
+        </section>
+
+        <section class="property-features">
+            <h2>Características</h2>
+            <hr><br>
+            <ul>
+                <li><img src="img/icons/bed.png" alt="Quartos"> 3 Quartos</li>
+                <li><img src="img/icons/bath.png" alt="Banheiros"> 2 Banheiros</li>
+                <li><img src="img/icons/wi-fi.png" alt="WiFi"> WiFi</li>
+                <li><img src="img/icons/pool.png" alt="Piscina"> Piscina</li>
+                <li><img src="img/icons/parking.png" alt="Estacionamento"> Estacionamento</li>
+                <li><img src="img/icons/breakfast.png" alt="Café da Manhã"> Café da Manhã</li>
+            </ul>
+        </section>
+
+        <section class="property-availability">
+            <h2>Disponibilidade</h2>
+            <hr><br>
+            <p>Datas disponíveis para reserva: <span id="available-dates">01/09/2024 - 30/09/2024</span></p>
+        </section>
+
+        <section class="property-reviews">
+            <h2>Avaliação do Imóvel</h2>
+            <hr><br>
+            <span>⭐⭐⭐⭐⭐</span>
+            <p>Avaliação média: <strong>4.8/5</strong></p>
+            <h3>Comentários dos hóspedes:</h3>
+            <ul>
+                <li>
+                    <span class="star-rating">
+                        <input type="radio" name="rating1" id="rating1-5"><label for="rating1-5"></label>
+                        <input type="radio" name="rating1" id="rating1-4"><label for="rating1-4"></label>
+                        <input type="radio" name="rating1" id="rating1-3"><label for="rating1-3"></label>
+                        <input type="radio" name="rating1" id="rating1-2"><label for="rating1-2"></label>
+                        <input type="radio" name="rating1" id="rating1-1"><label for="rating1-1"></label>
+                    </span>
+                    "Lugar incrível, muito confortável!" - João S.
+                </li>
+                <li>
+                    <span class="star-rating">
+                        <input type="radio" name="rating2" id="rating2-5"><label for="rating2-5"></label>
+                        <input type="radio" name="rating2" id="rating2-4"><label for="rating2-4"></label>
+                        <input type="radio" name="rating2" id="rating2-3"><label for="rating2-3"></label>
+                        <input type="radio" name="rating2" id="rating2-2"><label for="rating2-2"></label>
+                        <input type="radio" name="rating2" id="rating2-1"><label for="rating2-1"></label>
+                    </span>
+                    "Vista maravilhosa, voltaremos com certeza." - Maria F.
+                </li>
+                <li>
+                    <span class="star-rating">
+                        <input type="radio" name="rating3" id="rating3-5"><label for="rating3-5"></label>
+                        <input type="radio" name="rating3" id="rating3-4"><label for="rating3-4"></label>
+                        <input type="radio" name="rating3" id="rating3-3"><label for="rating3-3"></label>
+                        <input type="radio" name="rating3" id="rating3-2"><label for="rating3-2"></label>
+                        <input type="radio" name="rating3" id="rating3-1"><label for="rating3-1"></label>
+                    </span>
+                    "A casa é exatamente como nas fotos, adoramos!" - Pedro A.
+                </li>
+            </ul>
+        </section>
+
+        <section class="host-reviews">
+            <h2>Avaliação do Locador</h2>
+            <hr><br>
+            <span>⭐⭐⭐⭐⭐</span>
+            <p>Avaliação média: <strong>5/5</strong></p>
+            <h3>Comentários sobre o locador:</h3>
+            <ul>
+                <li>
+                    <span class="star-rating">
+                        <input type="radio" name="rating4" id="rating4-5"><label for="rating4-5"></label>
+                        <input type="radio" name="rating4" id="rating4-4"><label for="rating4-4"></label>
+                        <input type="radio" name="rating4" id="rating4-3"><label for="rating4-3"></label>
+                        <input type="radio" name="rating4" id="rating4-2"><label for="rating4-2"></label>
+                        <input type="radio" name="rating4" id="rating4-1"><label for="rating4-1"></label>
+                    </span>
+                    "Muito atencioso e prestativo." - Ana R.
+                </li>
+                <li>
+                    <span class="star-rating">
+                        <input type="radio" name="rating5" id="rating5-5"><label for="rating5-5"></label>
+                        <input type="radio" name="rating5" id="rating5-4"><label for="rating5-4"></label>
+                        <input type="radio" name="rating5" id="rating5-3"><label for="rating5-3"></label>
+                        <input type="radio" name="rating5" id="rating5-2"><label for="rating5-2"></label>
+                        <input type="radio" name="rating5" id="rating5-1"><label for="rating5-1"></label>
+                    </span>
+                    "Respondeu rapidamente todas as nossas dúvidas." - Carlos M.
+                </li>
+            </ul>
+        </section>
+
+        <section class="local-area-info">
+            <h2>Informações sobre a Área Local</h2>
+            <hr><br>
+            <p>Explore a área local e descubra pontos turísticos, restaurantes e atividades próximas à propriedade.</p>
+            <ul>
+                <li>Praia do Sol - 5 minutos a pé</li>
+                <li>Restaurante Mar Azul - 10 minutos de carro</li>
+                <li>Parque Ecológico - 15 minutos de bicicleta</li>
+            </ul>
+        </section>
+
+        <section class="social-integration">
+            <h2>Compartilhe sua experiência!</h2>
+            <hr><br>
+            <p>Compartilhe sua experiência nas redes sociais usando a hashtag <strong>#BelaCasaDePraia</strong> e siga-nos para mais atualizações.</p>
+            <div class="social-buttons">
+                <a href="https://www.instagram.com/"><img src="img/instagram.png" alt="Instagram" /></a>
+                <a href="https://x.com/home"><img src="img/twitter.png" alt="Twitter" /></a>
+                <a href="https://www.facebook.com/"><img src="img/facebook.png" alt="Facebook" /></a>
+            </div>
+        </section>
+
+        <section class="personalized-recommendations">
+            <h2>Recomendações para você</h2>
+            <hr><br>
+            <p>Com base nas suas preferências, sugerimos as seguintes atividades e atrações:</p>
+            <ul>
+                <li>Passeio de barco pela costa</li>
+                <li>Aula de surfe para iniciantes</li>
+                <li>Trilha ecológica guiada</li>
+            </ul>
+        </section>
+
+        <section class="offers-promotions">
+            <h2>Ofertas e Promoções</h2>
+            <hr><br>
+            <p>Aproveite nossas ofertas especiais para estadias prolongadas e pacotes de fim de semana.</p>
+            <ul>
+                <li>10% de desconto para estadias de 7 dias ou mais</li>
+                <li>Pacote fim de semana: 2 noites com café da manhã incluído por R$ 450,00</li>
+            </ul>
+        </section>
+
+        <section class="enhanced-gallery">
+            <h2>Galeria de Imagens</h2>
+            <hr><br>
+            <div class="image-gallery">
+                <div class="thumbnail">
+                    <img src="img/casa 1/06.jpg" alt="Imagem 6">
+                </div>
+                <div class="thumbnail">
+                    <img src="img/casa 1/07.jpg" alt="Imagem 7">
+                </div>
+                <div class="thumbnail">
+                    <img src="img/casa 1/08.jpg" alt="Imagem 8">
+                </div>
+                <div class="thumbnail">
+                    <img src="img/casa 1/09.jpg" alt="Imagem 9">
+                </div>
+                <div class="thumbnail">
+                    <img src="img/casa 1/10.jpg" alt="Imagem 10">
+                </div>
+            </div>
+        </section>
+
+        <section class="interactive-map">
+            <h2>Localização do Imóvel</h2>
+            <hr><br>
+            <p>Confira a localização exata e explore os arredores.</p>
+            <div id="map">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3112.267235615144!2d-76.6168376845192!3d38.97863027955882!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89b7f0a4f0d7c0e7%3A0x4bc1fdddb55a27c2!2sAnnapolis%2C%20MD%2C%20USA!5e0!3m2!1sen!2sbr!4v1605196478305!5m2!1sen!2sbr" width="600" height="450" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+            </div>
+        </section>
+    </main>
+
+    <footer class="site-footer">
+        <div class="footer-container">
+            <ul class="footer-links">
+                <li><a href="#">Sobre Nós</a></li>
+                <li><a href="#">Termos e Condições</a></li>
+                <li><a href="#">Cancelamento</a></li>
+                <li><a href="#">Política de Privacidade</a></li>
+            </ul>
+            <div class="security-certificate">
+                <span class="certificate-text">Certificado de Segurança</span>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+
+</html>
